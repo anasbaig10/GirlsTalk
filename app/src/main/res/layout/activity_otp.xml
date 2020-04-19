@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context="com.example.sai.girlstalk.OTP">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/uppper"
+        android:layout_marginRight="20dp"
+        android:id="@+id/upper"/>
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="90dp"
+        android:src="@mipmap/logo"
+        android:id="@+id/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="32dp"/>
+    <TextView
+        android:background="#4FC1E9"
+        android:id="@+id/textView2Phone"
+        android:padding="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:text="Provide Phone no. with Country code"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#000"
+        android:layout_above="@+id/exampletxt"
+        android:layout_margin="10dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="italic"
+        android:text="For example .. +91123456789 (+91 is the country code and the rest is the phone number)"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:textAlignment="center"
+        android:id="@+id/exampletxt"
+        android:padding="10dp"/>
+
+    <EditText
+        android:id="@+id/Phonenoedittext"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/textView2Phone"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="41dp"
+        android:ems="10"
+        android:padding="10dp"
+        android:background="@drawable/edittext_bck"
+        android:inputType="phone"
+        android:hint="Phone No."/>
+
+    <Button
+        android:id="@+id/PhoneVerify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Phonenoedittext"
+        android:layout_marginTop="35dp"
+        android:text="Send OTP"
+        android:background="@drawable/round_btn"
+        android:layout_alignLeft="@+id/Phonenoedittext"
+        android:layout_alignStart="@+id/Phonenoedittext"
+        android:layout_alignRight="@+id/Phonenoedittext"
+        android:layout_alignEnd="@+id/Phonenoedittext" />
+
+    <ImageView
+        android:id="@+id/imageView2Phone"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignTop="@+id/Phonenoedittext"
+        android:layout_marginEnd="9dp"
+        android:layout_marginRight="9dp"
+        android:layout_marginTop="7dp"
+        android:layout_toLeftOf="@+id/textView2Phone"
+        android:layout_toStartOf="@+id/textView2Phone"
+        app:srcCompat="@drawable/ic_phone_iphone_black_24dp" />
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.github.loadingview.LoadingView
+                android:id="@+id/loadingView"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="24dp"
+                app:lv_duration="30"
+                app:lv_end_color="@color/color_end"
+                app:lv_external_radius="24dp"
+                app:lv_internal_radius="4dp"
+                android:visibility="gone"
+                app:lv_start_color="@color/color_start" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Wait for your OTP...."
+                android:layout_below="@+id/loadingView"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="#192A56"
+                android:fontFamily="@font/aclonica"
+                android:visibility="gone"
+                android:id="@+id/waittxt"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"/>
+
+
+        </RelativeLayout>
+    </FrameLayout>
+</RelativeLayout>

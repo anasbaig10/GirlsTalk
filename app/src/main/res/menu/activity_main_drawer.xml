@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item android:title="General">
+            <menu>
+        <item
+            android:id="@+id/nav_camera"
+            android:icon="@drawable/home"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/friends"
+            android:title="My Friends" />
+
+                <item
+                    android:id="@+id/nav_create_group"
+                    android:icon="@drawable/creategroup"
+                    android:title="Create a Group" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/vacancy"
+            android:title="Vacancies Posted" />
+
+            </menu>
+        </item>
+    </group>
+
+    <item android:title="GirlsHelp">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/location"
+                android:title="Share my Location!" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/call"
+                android:title="Emergency toll free numbers" />
+        </menu>
+    </item>
+    <item android:title="Sign out from your account">
+        <menu>
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/signout"
+            android:title="Sign Out"/>
+        </menu>
+    </item>
+
+</menu>

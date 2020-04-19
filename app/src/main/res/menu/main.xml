@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_hindi"
+        android:orderInCategory="100"
+        android:title="Change to Hindi"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_invites"
+        android:orderInCategory="100"
+        android:title="Send Invites"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_feedback"
+        android:orderInCategory="100"
+        android:title="Give us Feedback"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_how_to"
+        android:orderInCategory="100"
+        android:title="How to use this app?"
+        app:showAsAction="never" />
+    <item
+        android:title="Send help messege!"
+        android:id="@+id/siren"
+        android:icon="@drawable/siren"
+        app:showAsAction="ifRoom"
+        />
+</menu>

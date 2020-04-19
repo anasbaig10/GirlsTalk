@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "249575830401",
+    "firebase_url": "https://girlstalk-e6a93.firebaseio.com",
+    "project_id": "girlstalk-e6a93",
+    "storage_bucket": "girlstalk-e6a93.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:249575830401:android:c51e4f8d5b228111",
+        "android_client_info": {
+          "package_name": "com.example.sai.girlstalk"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "249575830401-63t1njd0gfn6jd44v7tbk55k9fe23gqn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.sai.girlstalk",
+            "certificate_hash": "ea44b606af3ddebc13429d58b0193cbae6e04f98"
+          }
+        },
+        {
+          "client_id": "249575830401-vng70cc41jds1ocr80qn8mdn2onkj7br.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAKgDzqfCrGluqSkD7f9WhwMMFQ0L0KrEc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "249575830401-vng70cc41jds1ocr80qn8mdn2onkj7br.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
